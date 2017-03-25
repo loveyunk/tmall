@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天猫</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- top -->
+    <div class="t-top">
+        <div class="t-container">
+            <div class="t-login-info">
+                <span>喵，欢迎来天猫</span>
+                <a href="javascript:void(0)" class="t-login">请登录</a>
+                <a href="javascript:void(0)" class="t-register">免费注册</a>
+            </div>
+            <ul class="t-menu">
+                <li class="t-mytaobao">
+                    <a href="">我的淘宝</a>
+                    <b class="list-bottom"></b>
+                    <ul class="t-list hide">
+                        <li><a href="">已买到的宝贝</a></li>
+                        <li><a href="">已卖出的宝贝</a></li>
+                    </ul>
+                </li>
+                <li class="follow">
+                    <i class="iconfont">&#xe600;</i>
+                    <a href="">我关注的品牌</a>
+                </li>
+                <li class="shopcar">
+                    <i class="iconfont">&#xe603;</i>
+                    <a href="">购物车<span class="num">0</span>件</a>
+                </li>
+                <li class="t-collect t-mytaobao">
+                    <a href="">收藏夹</a>
+                    <b class="list-bottom" id="t_arrow"></b>
+                    <ul class="t-list hide">
+                        <li><a href="">收藏的宝贝</a></li>
+                        <li><a href="">收藏的店铺</a></li>
+                    </ul>
+                </li>
+                <li class="mobile" id="mobile">
+                    <span class="t-line"></span>
+                    <i class="iconfont">&#xe604;</i>
+                    <a href="">手机版</a>
+                    <div class="tmall-app" id="tamll-app"></div>
+                </li>
+                <li class="i-taobao">
+                    <a href="">淘宝网</a>
+                </li>
+                <li class="i-qiye">
+                    <a href="">企业购</a>
+                </li>
+                <li class="business t-mytaobao">
+                    <a href="">商家支持</a>
+                    <b class="list-bottom"></b>
+                    <div class="t-business hide">
+                        <span>商家：</span>
+                        <ul class="t-business-list">
+                            <li><a href="">商家中心</a></li>
+                            <li><a href="">商家入驻</a></li>
+                            <li><a href="">运营服务</a></li>
+                            <li><a href="">商家品控</a></li>
+                            <li><a href="">商家工具</a></li>
+                            <li><a href="">商家规则</a></li>
+                            <li><a href="">天猫智库</a></li>
+                            <li><a href="">喵言喵语</a></li>
+                        </ul>
+                        <span>帮助</span>
+                        <ul class="t-business-list">
+                            <li>帮助中心</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="website-nav t-mytaobao">
+                    <i class="iconfont">&#xe601;</i>
+                    <a href="">网站导航</a>
+                    <b class="list-bottom"></b>
+                    <div class="website-nav-list">
+                        <div class="website-nav-list-hot">
+                            <h2>热点推荐 Hot</h2>
+                            <ul>
+                                <li><a href="">天猫超市</a></li>
+                                <li><a href="">喵鲜生</a></li>
+                                <li>
+                                    <a href="">科技新品</a>
+                                    <i class="icon-new"></i>
+                                </li>
+                                <li><a href="">女装新品</a></li>
+                                <li><a href="">酷玩街</a></li>
+                                <li><a href="">内衣新品</a></li>
+                                <li><a href="">试美妆</a></li>
+                                <li><a href="">运动新品</a></li>
+                                <li><a href="">时尚先生</a></li>
+                                <li><a href="">精明妈咪</a></li>
+                                <li><a href="">吃乐会</a></li>
+                                <li><a href="">企业采购</a></li>
+                                <li><a href="">会员积会</a></li>
+                                <li><a href="">天猫国际</a></li>
+                            </ul>
+                        </div>
+                        <div class="website-nav-list-market">
+                            <h2>行业市场 Market</h2>
+                            <ul>
+                                <li><a href="">美妆</a></li>
+                                <li><a href="">电器</a></li>
+                                <li><a href="">女装</a></li>
+                                <li><a href="">男装</a></li>
+                                <li><a href="">女鞋</a></li>
+                                <li><a href="">男鞋</a></li>
+                                <li><a href="">内衣</a></li>
+                                <li><a href="">箱包</a></li>
+                                <li><a href="">运动</a></li>
+                                <li><a href="">母婴</a></li>
+                                <li><a href="">家装</a></li>
+                                <li><a href="">医药</a></li>
+                                <li><a href="">食品</a></li>
+                                <li><a href="">配饰</a></li>
+                                <li><a href="">洗车</a></li>
+                            </ul>
+                        </div>
+                        <div class="website-nav-list-brand">
+                            <h2>品牌风尚 Brand</h2>
+                            <ul>
+                                <li><a href="">尚天猫</a></li>
+                                <li><a href="">大牌街</a></li>
+                                <li><a href="">潮牌街</a></li>
+                                <li><a href="">天猫原创</a></li>
+                                <li><a href="">什么牌子好</a></li>
+                            </ul>
+                        </div>
+                        <div class="website-nav-list-help">
+                            <h2>服务指南 Help</h2>
+                            <ul>
+                                <li><a href="">帮助中心</a></li>
+                                <li><a href="">品质保障</a></li>
+                                <li><a href="">特色服务</a></li>
+                                <li><a href="">7天退换货</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- sidebar -->
+    <div class="sidebar">
+
+    </div>
+    <!-- header -->
+    <header>
+
+    </header>
+
+
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+body {
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+    overflow-y: scroll;
+}
+.hide {
+    display: none;
+}
+/* top */
+.t-top {
+    width: 100%;
+    height: 32px;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
+    padding-right: 36px;
+    box-sizing: border-box;
+}
+.t-container {
+    width: 1230px;
+    margin: 0 auto;
+    color: #999;
+    line-height: 32px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+.t-container a {
+    color: inherit;
+}
+.t-container a:hover {
+    color: #C40000;
+    transition: color .2s;
+}
+.t-login-info {
+    float: left;
+}
+.t-login, .t-register {
+    padding-left: 20px;
+}
+.t-menu {
+    float: right;
+}
+.t-menu > li {
+    float: left;
+    margin: 0 6px;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 262021 */
+    src: url('http://at.alicdn.com/t/font_05q6av9yxv2njyvi.eot');
+    src: url('http://at.alicdn.com/t/font_05q6av9yxv2njyvi.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_05q6av9yxv2njyvi.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_05q6av9yxv2njyvi.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_05q6av9yxv2njyvi.svg#iconfont') format('svg');
+}
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.t-menu i{
+    font-size: 12px;
+    color: #C40000;
+}
+li.shopcar {
+    margin-left: 12px;
+}
+.shopcar .num {
+    padding: 0 2px;
+    font-weight: 700;
+    font-family: Arial;
+    color: #666;
+}
+.t-mytaobao {
+    width: 66px;
+    padding-left: 8px;
+}
+.t-menu b {
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+}
+.list-top {
+    border-style: dashed dashed solid;
+    border-color: transparent transparent #bbb;
+    bottom: 6px;
+    transition: all .2s;
+}
+.list-bottom {
+    border-style: solid dashed dashed;
+    border-color: #bbb transparent transparent;
+    bottom: 2px;
+    transition: all .2s;
+}
+.t-mytaobao a:hover {
+    text-decoration: underline;
+    color: #C40000;
+}
+.t-mytaobao:hover {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+.t-list {
+    /*display: none;*/
+    background: #fff;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    border-color: #eee;
+    padding: 5px 10px 5px;
+    position: absolute;
+    top: 33px;
+    margin-left: -9px;
+}
+.t-list li {
+    line-height: 20px;
+}
+.t-collect {
+    width: 55px;
+}
+.t-line {
+    border-left: 1px solid #ccc;
+    text-align: left;
+}
+.mobile i {
+    position: relative;
+    top: 2px;
+    margin-left: 12px;
+}
+.tmall-app {
+    width: 175px;
+    height: 215px;
+    background: url("../image/mobile_ewm.png");
+    border: 2px solid #eee;
+    position: absolute;
+    margin-left: -52px;
+    top: 30px;
+    display: none;
+}
+li.i-taobao {
+    margin: 0 12px;
+}
+li.i-qiye {
+    margin-right: 10px;
+}
+.business {
+    width: 64px;
+    position: relative;
+}
+.t-business {
+    width: 144px;
+    border: 1px solid #eee;
+    border-top: none;
+    position: absolute;
+    margin-left: -81px;
+}
+.t-business span {
+    font-weight: bold;
+    color: #666;
+    margin-left: 16px;
+    line-height: 26px;
+}
+.t-business-list {
+    margin-top: -6px;
+    overflow: hidden;
+    margin-bottom: -5px;
+    border-bottom: 1px dotted #888;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.t-business-list li {
+    float: left;
+    margin: 0 8px;
+    line-height: 22px;
+}
+.t-business::after {
+    content: '';
+    display: block;
+    height: 12px;
+    visibility: hidden;
+}
+/* website-nav */
+.website-nav {
+    width: 78px;
+    position: relative;
+    color: #666;
+}
+.website-nav i {
+    position: relative;
+    top: 1px;
+}
+.website-nav-list {
+    position: absolute;
+    margin-left: -1131px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    padding: 25px 0;
+    border-top: none;
+}
+.website-nav-list h2 {
+    font-weight: normal;
+    font-size: 16px;
+    padding-bottom: 8px;
+    margin-left: 20px;
+}
+.website-nav-list > div {
+    float: left;
+    height: 200px;
+    border-right: 1px solid #eee
+}
+div.website-nav-list-help {
+    border-right: none;
+}
+.website-nav-list-hot h2 {
+    color: #f56a00;
+}
+.website-nav-list-market h2 {
+    color: #2263d4;
+    margin-left: 30px;
+}
+.website-nav-list-brand h2 {
+    color: #000;
+    margin-left: 27px;
+}
+.website-nav-list-help h2 {
+    color: #666;
+}
+.website-nav-list-hot {
+    width: 305px;;
+}
+.website-nav-list-market {
+    width: 400px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.website-nav-list-brand {
+    width: 315px;;
+}
+.website-nav-list-help {
+    width: 185px;
+}
+.website-nav-list li {
+    float: left;
+}
+.website-nav-list-market li {
+    margin: 0 31px;
+}
+.website-nav-list-hot li {
+    width: 80px;
+    margin-left: 20px;
+}
+.website-nav-list-brand li {
+    margin: 0 28px;
+}
+.website-nav-list-help li {
+    margin: 0 23px;
+}
+.website-nav-list-hot li a:hover {
+    color: #f56a00;
+}
+.website-nav-list-market li a:hover {
+    color: #2263d4;
+}
+.website-nav-list-brand li a:hover {
+    color: #000;
+}
+.website-nav-list-help li a:hover {
+    color: #666;
+}
+.icon-new {
+    position: absolute;
+    /*display: block;*/
+    width: 10px;
+    height: 10px;
+    border: 1px solid red;
+    background: url("../image/bg_sprite.png");
+}
+/* sidebar */
+.sidebar {
+    width: 35px;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+/* header */
