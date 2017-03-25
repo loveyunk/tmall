@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>天猫</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- top -->
@@ -17,10 +17,10 @@
                 <a href="javascript:void(0)" class="t-register">免费注册</a>
             </div>
             <ul class="t-menu">
-                <li class="t-mytaobao">
+                <li class="t-mytaobao t-top-color">
                     <a href="">我的淘宝</a>
                     <b class="list-bottom"></b>
-                    <ul class="t-list hide">
+                    <ul class="t-list t-mytaobao-list hide">
                         <li><a href="">已买到的宝贝</a></li>
                         <li><a href="">已卖出的宝贝</a></li>
                     </ul>
@@ -33,10 +33,10 @@
                     <i class="iconfont">&#xe603;</i>
                     <a href="">购物车<span class="num">0</span>件</a>
                 </li>
-                <li class="t-collect t-mytaobao">
+                <li class="t-collect t-top-color">
                     <a href="">收藏夹</a>
-                    <b class="list-bottom" id="t_arrow"></b>
-                    <ul class="t-list hide">
+                    <b class="list-bottom"></b>
+                    <ul class="t-list t-collect-list hide">
                         <li><a href="">收藏的宝贝</a></li>
                         <li><a href="">收藏的店铺</a></li>
                     </ul>
@@ -53,7 +53,7 @@
                 <li class="i-qiye">
                     <a href="">企业购</a>
                 </li>
-                <li class="business t-mytaobao">
+                <li class="business t-top-color">
                     <a href="">商家支持</a>
                     <b class="list-bottom"></b>
                     <div class="t-business hide">
@@ -70,32 +70,33 @@
                         </ul>
                         <span>帮助</span>
                         <ul class="t-business-list">
-                            <li>帮助中心</li>
+                            <li><a href="">帮助中心</a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="website-nav t-mytaobao">
+                <li class="website-nav t-top-color">
                     <i class="iconfont">&#xe601;</i>
                     <a href="">网站导航</a>
                     <b class="list-bottom"></b>
-                    <div class="website-nav-list">
+                    <div class="website-nav-list hide">
                         <div class="website-nav-list-hot">
                             <h2>热点推荐 Hot</h2>
                             <ul>
                                 <li><a href="">天猫超市</a></li>
                                 <li><a href="">喵鲜生</a></li>
                                 <li>
-                                    <a href="">科技新品</a>
-                                    <i class="icon-new"></i>
+                                    <a href="">科技新品<span class="icon-new"></span></a>
                                 </li>
-                                <li><a href="">女装新品</a></li>
+                                <li><a href="">女装新品<span class="icon-new icon-hot"></span></a></li>
                                 <li><a href="">酷玩街</a></li>
-                                <li><a href="">内衣新品</a></li>
+                                <li><a href="">内衣新品 <span class="icon-new icon-hot"></span></a></li>
                                 <li><a href="">试美妆</a></li>
                                 <li><a href="">运动新品</a></li>
-                                <li><a href="">时尚先生</a></li>
+                                <li><a href="">时尚先生<span class="icon-new icon-hot"></span></a></li>
                                 <li><a href="">精明妈咪</a></li>
-                                <li><a href="">吃乐会</a></li>
+                                <li>
+                                    <a href="">吃乐会<span class="icon-new"></span></a>
+                                </li>
                                 <li><a href="">企业采购</a></li>
                                 <li><a href="">会员积会</a></li>
                                 <li><a href="">天猫国际</a></li>
@@ -106,18 +107,20 @@
                             <ul>
                                 <li><a href="">美妆</a></li>
                                 <li><a href="">电器</a></li>
-                                <li><a href="">女装</a></li>
-                                <li><a href="">男装</a></li>
+                                <li><a href="">女装<span class="icon-new icon-hot"></span></a></li>
+                                <li><a href="">男装<span class="icon-new icon-hot"></span></a></li>
                                 <li><a href="">女鞋</a></li>
                                 <li><a href="">男鞋</a></li>
-                                <li><a href="">内衣</a></li>
+                                <li><a href="">内衣<span class="icon-new icon-hot"></span></a></li>
                                 <li><a href="">箱包</a></li>
                                 <li><a href="">运动</a></li>
                                 <li><a href="">母婴</a></li>
                                 <li><a href="">家装</a></li>
                                 <li><a href="">医药</a></li>
                                 <li><a href="">食品</a></li>
-                                <li><a href="">配饰</a></li>
+                                <li>
+                                    <a href="">配饰 <span class="icon-new"></span></a>
+                                </li>
                                 <li><a href="">洗车</a></li>
                             </ul>
                         </div>
@@ -151,11 +154,345 @@
     </div>
     <!-- header -->
     <header>
-
+        <h1 class="hide">天猫logo</h1>
+        <a href="" class="mall-logo">天猫logo</a>
+        <div class="mall-search">
+            <div class="mall-search-top">
+                <form action="">
+                    <input type="text" name="mall-search-input" id="mall-search-input" autocomplete="off" placeholder="小米MAX">
+                    <input type="submit" name="mall-search-submit" id="mall-search-submit" value="搜索">
+                </form>
+            </div>
+            <ul class="hot-query">
+                <li><a href="" class="c40">针织衫</a></li>
+                <li><a href="">休闲裤</a></li>
+                <li><a href="">四件套</a></li>
+                <li><a href="" class="c40">榨汁机</a></li>
+                <li><a href="">客厅灯</a></li>
+                <li><a href="">文胸</a></li>
+                <li><a href="" class="c40">运动鞋</a></li>
+                <li><a href="">单肩包</a></li>
+                <li><a href="" class="c40">口红</a></li>
+            </ul>
+        </div>
     </header>
+    <div id="content">
+        <!-- main-nav -->
+        <div class="main-nav">
+            <div class="inner-con1">
+                <div class="inner-con2">
+                    <a href=""><img src="image/tmall_supermarket.png" alt="天猫超市"></a>
+                    <a href=""><img src="image/tmall_guoji.png" alt="天猫国际"></a>
+                    <a href="">天猫会员</a>
+                    <a href="">品牌街</a>
+                    <a href="">电器城</a>
+                    <a href="">喵鲜生</a>
+                    <a href="">医药馆</a>
+                    <a href="">营业厅</a>
+                    <a href="">魅力惠</a>
+                    <a href="">飞猪旅行</a>
+                    <a href="">苏宁易购</a>
+                </div>
+            </div>
+        </div>
+        <!-- category-con -->
+        <div class="category-con">
+            <div class="category-type">
+                <i class="iconfont">&#xe699;</i>
+                <div class="text">商品分类</div>
+            </div>
+            <ul class="normal-nav">
+                <li class="nav-item-0">
+                    <i class="iconfont">&#xe609;</i>
+                    <a href="">女装</a>/
+                    <a href="">内衣</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe610;</i>
+                    <a href="">男装</a>/
+                    <a href="">户外运动</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe611;</i>
+                    <a href="">女鞋</a>/
+                    <a href="">男鞋</a>/
+                    <a href="">箱包</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe60a;</i>
+                    <a href="">化妆品</a>/
+                    <a href="">个人护理</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe602;</i>
+                    <a href="">腕表</a>/
+                    <a href="">珠宝饰品</a>/
+                    <a href="">眼镜</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe613;</i>
+                    <a href="">手机</a>/
+                    <a href="">数码</a>/
+                    <a href="">电脑办公</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe608;</i>
+                    <a href="">母婴玩具</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe607;</i>
+                    <a href="">零食</a>/
+                    <a href="">进口食品</a>/
+                    <a href="">茶酒</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe612;</i>
+                    <a href="">生鲜水果</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe606;</i>
+                    <a href="">大家电</a>/
+                    <a href="">生活电器</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe605;</i>
+                    <a href="">家具建材</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe60b;</i>
+                    <a href="">洗车</a>/
+                    <a href="">配件</a>/
+                    <a href="">用品</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe60c;</i>
+                    <a href="">家纺</a>/
+                    <a href="">家饰</a>/
+                    <a href="">鲜花</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe60e;</i>
+                    <a href="">医药保健</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe60d;</i>
+                    <a href="">厨具</a>/
+                    <a href="">收纳</a>/
+                    <a href="">宠物</a>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe60f;</i>
+                    <a href="">图书音像</a>
+                </li>
+            </ul>
+            <div class="category-content">
+                <div class="pannel-con">
+                    <div class="pannel-0">
+                        <div class="hot-word-con">
+                            <div class="hot-word-line">
+                                <div class="line-title">
+                                    <div class="title-text">当季流行</div>
+                                    <i class="iconfont"></i>
+                                </div>
+                                <div class="line-con">
+                                    <a href="" class="hot-word hightlight">2017春季新品</a>
+                                    <a href="" class="hot-word">商场同款</a>
+                                    <a href="" class="hot-word hightlight">气质连衣裙</a>
+                                    <a href="" class="hot-word">羽绒服</a>
+                                    <a href="" class="hot-word">中长款毛呢</a>
+                                    <a href="" class="hot-word hightlight">百搭休闲裤</a>
+                                    <a href="" class="hot-word hightlight">无痕文胸</a>
+                                    <a href="" class="hot-word hightlight">运动文胸</a>
+                                    <a href="" class="hot-word">超柔内裤</a>
+                                    <a href="" class="hot-word hightlight">潮流家居服</a>
+                                    <a href="" class="hot-word">百搭船袜</a>
+                                    <div class="seprate"></div>
+                                </div>
+                            </div>
+                            <div class="hot-word-line">
+                                <div class="line-title">
+                                    <div class="title-text">精选上装</div>
+                                    <i class="iconfont"></i>
+                                </div>
+                                <div class="line-con">
+                                    <a href="" class="hot-word hightlight">羽绒服</a>
+                                    <a href="" class="hot-word">毛呢外套</a>
+                                    <a href="" class="hot-word hightlight">毛衣</a>
+                                    <a href="" class="hot-word hightlight">衬衫</a>
+                                    <a href="" class="hot-word">风衣</a>
+                                    <a href="" class="hot-word hightlight">短外套</a>
+                                    <a href="" class="hot-word">卫衣</a>
+                                    <a href="" class="hot-word hightlight">小西装</a>
+                                    <div class="seprate"></div>
+                                </div>
+                            </div>
+                            <div class="hot-word-line">
+                                <div class="line-title">
+                                    <div class="title-text">浪漫裙装</div>
+                                    <i class="iconfont"></i>
+                                </div>
+                                <div class="line-con">
+                                    <a href="" class="hot-word">连衣裙</a>
+                                    <a href="" class="hot-word hightlight">蕾丝连衣裙</a>
+                                    <a href="" class="hot-word hightlight">印花连衣裙</a>
+                                    <a href="" class="hot-word">真丝连衣裙</a>
+                                    <a href="" class="hot-word hightlight">半身裙</a>
+                                    <a href="" class="hot-word hightlight">百褶裙</a>
+                                    <a href="" class="hot-word">牛仔裙</a>
+                                    <a href="" class="hot-word">背心裙</a>
+                                    <a href="" class="hot-word hightlight">a字裙</a>
+                                    <a href="" class="hot-word">棉花连衣裙</a>
+                                    <a href="" class="hot-word">蕾丝半身裙</a>
+                                    <a href="" class="hot-word hightlight">包臀裙</a>
+                                    <a href="" class="hot-word hightlight">长袖连衣裙</a>
+                                    <div class="seprate"></div>
+                                </div>
+                            </div>
+                            <div class="hot-word-line">
+                                <div class="line-title">
+                                    <div class="title-text">女士下装</div>
+                                    <i class="iconfont"></i>
+                                </div>
+                                <div class="line-con">
+                                    <a href="" class="hot-word">牛仔裤</a>
+                                    <a href="" class="hot-word hightlight">休闲裤</a>
+                                    <a href="" class="hot-word">哈伦裤</a>
+                                    <a href="" class="hot-word">背带裤</a>
+                                    <a href="" class="hot-word hightlight">小脚裤</a>
+                                    <a href="" class="hot-word hightlight">西装裤</a>
+                                    <a href="" class="hot-word">打底裤</a>
+                                    <a href="" class="hot-word higlight">阔腿裤</a>
+                                    <a href="" class="hot-word hightlight">短裤</a>
+                                    <div class="seprate"></div>
+                                </div>
+                            </div>
+                            <div class="hot-word-line">
+                                <div class="line-title">
+                                    <div class="title-text">特色女装</div>
+                                    <i class="iconfont"></i>
+                                </div>
+                                <div class="line-con">
+                                    <a href="" class="hot-word hightlight">时尚气质套装</a>
+                                    <a href="" class="hot-word">休闲运动套装</a>
+                                    <a href="" class="hot-word">精选妈妈装</a>
+                                    <a href="" class="hot-word hightlight">大码女装</a>
+                                    <a href="" class="hot-word hightlight">职业女装</a>
+                                    <a href="" class="hot-word">优雅旗袍</a>
+                                    <a href="" class="hot-word hightlight">精致礼服</a>
+                                    <a href="" class="hot-word">婚纱</a>
+                                    <a href="" class="hot-word">唐装</a>
+                                    <a href="" class="hot-word hightlight">小码女装</a>
+                                    <div class="seprate"></div>
+                                </div>
+                            </div>
+                            <div class="hot-word-line">
+                                <div class="line-title">
+                                    <div class="title-text">文胸塑身</div>
+                                    <i class="iconfont"></i>
+                                </div>
+                                <div class="line-con">
+                                    <a href="" class="hot-word hightlight">光面文胸</a>
+                                    <a href="" class="hot-word">运动文胸</a>
+                                    <a href="" class="hot-word hightlight">美背文胸</a>
+                                    <a href="" class="hot-word">聚拢文胸</a>
+                                    <a href="" class="hot-word">大怀文胸</a>
+                                    <a href="" class="hot-word hightlight">轻薄塑身</a>
+                                    <div class="seprate"></div>
+                                </div>
+                            </div>
+                            <div class="hot-word-line">
+                                <div class="line-title">
+                                    <div class="title-text">家居服</div>
+                                    <i class="iconfont"></i>
+                                </div>
+                                <div class="line-con">
+                                    <a href="" class="hot-word hightlight">春夏家居服</a>
+                                    <a href="" class="hot-word hightlight">纯棉家居服</a>
+                                    <a href="" class="hot-word">莫代尔家居服</a>
+                                    <a href="" class="hot-word">真丝家居服</a>
+                                    <a href="" class="hot-word hightlight">春夏睡裙</a>
+                                    <a href="" class="hot-word">男士家居服</a>
+                                    <a href="" class="hot-word">情侣家居服</a>
+                                    <a href="" class="hot-word hightlight">性感睡裙</a>
+                                    <div class="seprate"></div>
+                                </div>
+                            </div>
+                            <div class="hot-word-line">
+                                <div class="line-title">
+                                    <div class="title-text">内裤背心</div>
+                                    <i class="iconfont"></i>
+                                </div>
+                                <div class="line-con">
+                                    <a href="" class="hot-word">男士内裤</a>
+                                    <a href="" class="hot-word hightlight">女式内裤</a>
+                                    <a href="" class="hot-word hightlight">男士内裤多条装</a>
+                                    <a href="" class="hot-word">女士内裤多条装</a>
+                                    <a href="" class="hot-word hightlight">莫代尔内裤</a>
+                                    <div class="seprate"></div>
+                                </div>
+                            </div>
+                            <div class="hot-word-line">
+                                <div class="line-title">
+                                    <div class="title-text">袜类</div>
+                                    <i class="iconfont"></i>
+                                </div>
+                                <div class="line-con">
+                                    <a href="" class="hot-word hightlight">船袜</a>
+                                    <a href="" class="hot-word">长筒丝袜</a>
+                                    <a href="" class="hot-word hightlight">男士运动袜</a>
+                                    <a href="" class="hot-word hightlight">女士运动袜</a>
+                                    <a href="" class="hot-word">潮流渔网袜</a>
+                                    <!--<div class="seprate"></div>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-logo-con"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
 
 
-    <script src="js/jquery-3.2.0.js"></script>
-    <script src="js/index.js"></script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="js/require.js" data-main="js/main"></script>
+    <!--<script src="js/jquery-3.2.0.js" data-main="js/main"></script>-->
+    <!--<script src="js/main.js"></script>-->
 </body>
 </html>
