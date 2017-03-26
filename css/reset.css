@@ -55,8 +55,3 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-.clrfix:after {
-    content: '.';
-    display: none;
-    clear: both;
-}

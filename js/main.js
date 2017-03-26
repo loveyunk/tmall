@@ -1,10 +1,3 @@
-require.config({
-    paths: {
-        jquery: "jquery-3.2.0"
-    }
-});
-
-require(['jquery'], function ($) {
 
     // 我的淘宝下拉列表
     $(".t-mytaobao").hover(function () {
@@ -41,8 +34,27 @@ require(['jquery'], function ($) {
         $("#tamll-app").hide();
     });
 
+    // 侧边导航
+    $(".normal-nav").children("li").hover(function () {
+        var that = $(this);
+        var i = $(this).index();
+        $(this).addClass("bf").addClass("color"+i).children("a").addClass("b").addClass("").addClass("color"+i);
+        $(".pannel-con").eq($(this).index()).show().mouseenter(function () {
+            that.addClass("bf").addClass("color"+i).children("a").addClass("b").addClass("color"+i);
+            $(this).show();
+        }).mouseleave(function () {
+            $(this).hide();
+            that.removeClass("bf").removeClass("color"+i).children("a").removeClass("b").removeClass("color"+i);
+        });
+    }, function () {
+        var i = $(this).index();
+        $(this).removeClass("bf").removeClass("color"+i).children("a").removeClass("b").removeClass("color"+i);
+        $(".pannel-con").eq($(this).index()).hide();
+    });
 
-});
+    
+
+
 
 
 
