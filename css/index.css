@@ -374,7 +374,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .tools-menu-pane {
     position: absolute;
     top: 33px;
-    z-index: 2;
+    z-index: 20;
     padding: 10px;
     margin-left: -1px;
     border: 1px solid #eee;
@@ -607,13 +607,13 @@ input::-webkit-input-placeholder {
 /********** Content Style **********/
 .content {
     width: calc(100% - 35px);
+    position: relative;
 }
 
 /********** Nav Style **********/
 .nav {
     height: 36px;
     background: #DD2727;
-    overflow: hidden;
 }
 
 .nav-category {
@@ -679,12 +679,16 @@ input::-webkit-input-placeholder {
     height: 500px;
     margin-bottom: 50px;
     position: relative;
+    top: 0;
+    left: 0;
 }
 
 .banner img {
     width: 100%;
     height: 500px;
     position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .banner-sliderNav {
@@ -695,25 +699,21 @@ input::-webkit-input-placeholder {
 }
 
 .banner-sliderNav li {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #B2B2B2;
     border-radius: 50%;
     display: inline-block;
     padding: 2px;
     overflow: hidden;
     margin-left: 16px;
     cursor: pointer;
-    transition: all .6s ease;
-    /*background: url("../images/slider_nav.png") no-repeat center center;*/
-
+    transition: all .4s ease;
     background: #B2B2B2;
 }
-.banner .select {
-    /*background: url("../images/slider_nav.png") no-repeat center center;*/
-}
-.banner-sliderNav li:hover {
-    background: url("../images/slider_nav.png") no-repeat center center;
-    /*background-color: #eee;*/
+
+li.select {
+    background: #eee;
 }
 
 /********** RightSidebar Style **********/
@@ -865,6 +865,304 @@ input::-webkit-input-placeholder {
     visibility: hidden;
 }
 
+/********** category-con Style **********/
+.category-con {
+    height: 500px;
+    position: absolute;
+    top: 0;
+
+}
+
+.category-con .category-type {
+    width: 200px;
+    height: 36px;
+    position: absolute;
+    margin-top: -36px;
+    margin-left: 45px;
+    background: #C60A0A;
+    line-height: 36px;
+}
+
+.category-con .category-type i {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 14px;
+}
+
+.category-type .text {
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* 侧边栏导航 */
+.normal-nav {
+    margin-left: 45px;
+    background-color: rgba(238, 238, 238, .95);
+    width: 200px;
+    height: 500px;
+    position: relative;
+    z-index: 11;
+}
+
+.normal-nav li {
+    width: 100%;
+    height: 31.2px;
+    line-height: 31.2px;
+    font-size: 14px;
+    color: #000;
+}
+
+.normal-nav li i {
+    opacity: .5;
+    margin-left: 14px;
+    margin-right: 4px;
+}
+
+.normal-nav li a {
+    color: #000;
+}
+
+.color0 {
+    color: #e54077 !important;
+}
+
+.color1 {
+    color: #427def !important;
+}
+
+.color2 {
+    color: #6347ed !important;
+}
+
+.color3 {
+    color: #e54077 !important;
+}
+
+.color4 {
+    color: #6347ed !important;
+}
+
+.color5 {
+    color: #427def !important;
+}
+
+.color6 {
+    color: #fa5c5c !important;
+}
+
+.color7 {
+    color: #f7a831 !important;
+}
+
+.color8 {
+    color: #427def !important;
+}
+
+.color9 {
+    color: #dd2727 !important;
+}
+
+.color10 {
+    color: #dd2727 !important;
+}
+
+.color11 {
+    color: #427def !important;
+}
+
+.color12 {
+    color: #f7a831 !important;
+}
+
+.color13 {
+    color: #3bc7b0 !important;
+}
+
+.color14 {
+    color: #dd2727 !important;
+}
+
+.color15 {
+    color: #3bc7b0 !important;
+}
+
+/* 分类内容 */
+.category-content {
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 245px;
+}
+
+.pannel-con {
+    width: 852px;
+    height: 500px;
+    background: #FAFAFA;
+    overflow: hidden;
+    position: absolute;
+}
+
+.pannel-0 {
+    z-index: 1;
+}
+
+.hot-word-con {
+    width: 583px;
+    height: 462px;
+    padding: 19px 30px;
+    background: #fff;
+    float: left;
+}
+
+.hot-word-con .line-title {
+    width: 60px;
+    color: #333;
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    height: 22px;
+    line-height: 22px;
+    float: left;
+    position: relative;
+}
+
+.category-content .hot-word-con .line-con {
+    width: 493px;
+    float: left;
+}
+
+.category-content .hot-word-con .title-text {
+    text-align-last: justify;
+}
+
+.category-content .hot-word-con .title-text + i {
+    font-size: 12px;
+    color: #888;
+    position: absolute;
+    top: 0;
+    right: -12px;
+}
+
+.category-content .hot-word-con .line-con .hot-word {
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #666;
+    margin-right: 13px;
+}
+
+.category-content .hot-word-con .seprate {
+    margin-bottom: 9.5px;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #eee;
+    border-bottom-color: rgba(0, 0, 0, .1);
+    height: 9.5px;
+}
+
+.pannel-0 a.hightlight {
+    color: #e54077 !important;
+}
+
+.pannel-1 a.hightlight {
+    color: #427def !important;
+}
+
+.pannel-2 a.hightlight {
+    color: #6347ed !important;
+}
+
+.pannel-3 a.hightlight {
+    color: #e54077 !important;
+}
+
+.pannel-4 a.hightlight {
+    color: #6347ed !important;
+}
+
+.pannel-5 a.hightlight {
+    color: #427def !important;
+}
+
+.pannel-6 a.hightlight {
+    color: #fa5c5c !important;
+}
+
+.pannel-7 a.hightlight {
+    color: #f7a831 !important;
+}
+
+.pannel-8 a.hightlight {
+    color: #427def !important;
+}
+
+.pannel-9 a.hightlight {
+    color: #dd2727 !important;
+}
+
+.pannel-10 a.hightlight {
+    color: #dd2727 !important;
+}
+
+.pannel-11 a.hightlight {
+    color: #427def !important;
+}
+
+.pannel-12 a.hightlight {
+    color: #f7a831 !important;
+}
+
+.pannel-13 a.hightlight {
+    color: #3bc7b0 !important;
+}
+
+.pannel-14 a.hightlight {
+    color: #dd2727 !important;
+}
+
+.pannel-15 a.hightlight {
+    color: #3bc7b0 !important;
+}
+
+.sub-logo-con {
+    width: 189px;
+    height: 480px;
+    margin: 10px;
+    float: right;
+    background: #FAFAFA;
+}
+
+.sub-logo-con a {
+    float: left;
+    width: 73px;
+    height: 37px;
+    padding: 5px 10px;
+    background: #fff;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+
+.sub-logo-con img {
+    width: 75px;
+    height: 36.5px;
+}
+
+.sub-logo-con a.sub-logo-bottom {
+    width: 187px;
+    height: 87px;
+    padding: 0;
+    margin-top: 9px;
+}
+
+.sub-logo-con .sub-logo-bottom img {
+    width: 189px;
+    height: 87px;
+}
+
 /********** newHotBrand Style **********/
 .newHotBrand {
     width: 1230px;
@@ -996,6 +1294,7 @@ input::-webkit-input-placeholder {
     position: fixed;
     left: 2px;
     bottom: 50px;
+    z-index: 999;
 }
 
 .leftSidebar > a {
