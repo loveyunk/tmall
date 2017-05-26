@@ -258,10 +258,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /********** Tools Style **********/
 
 .tools {
-    width: auto;
+    position: relative;
+    min-width: 1230px;
     height: 32px;
     background: #F2F2F2;
-    border: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
     margin-right: 35px;
 }
 
@@ -535,6 +536,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /********** Header Style **********/
 .header {
     background: #fff;
+    min-width: 1230px;
     height: 130px;
 }
 
@@ -606,7 +608,7 @@ input::-webkit-input-placeholder {
 
 /********** Content Style **********/
 .content {
-    width: auto;
+    min-width: 1230px;
     padding-right: 35px;
     /*width: calc(100% - 35px);*/
     position: relative;
@@ -615,18 +617,19 @@ input::-webkit-input-placeholder {
 /********** Nav Style **********/
 .nav {
     height: 36px;
+    min-width: 1230px;
     background: #DD2727;
 }
 
 .nav .nav-wrapper {
     width: 1230px;
     margin: 0 auto;
+    background: #DD2727;
 }
 
 .nav-category {
     width: 200px;
     height: 36px;
-    background: #C60A0A;
     line-height: 35px;
     margin-right: 15px;
     float: left;
@@ -682,7 +685,7 @@ input::-webkit-input-placeholder {
 
 /********** Banner Style **********/
 .banner {
-    width: 100%;
+    min-width: 1230px;
     height: 500px;
     margin-bottom: 50px;
     position: relative;
@@ -1744,7 +1747,7 @@ li.select {
 
 /********** footer Style **********/
 .footer {
-    width: 100%;
+    min-width: 1230px;
     margin-right: 35px;
     background: #fff;
     border-top: 1px solid #D1D7DC;
@@ -1757,6 +1760,7 @@ li.select {
     margin: 25px auto;
     padding: 0;
     background: url("../images/footer_ensure.jpg") no-repeat;
+    /*background: #fff;*/
 }
 
 .footer-ensure a {
@@ -1794,14 +1798,14 @@ li.select {
 
 .footer-copyright {
     width: 100%;
-    background: #000;
+    margin: 0 auto;
     border-top: 2px solid #c40000;
     padding-bottom: 15px;
+    background: #000;
 }
 
 .footer-copyright-container {
-    width: 1190px;
-    margin: 0 auto;
+    width: 1230px;
 }
 
 .footer-tmallInfo {
