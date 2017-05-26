@@ -885,34 +885,6 @@ li.select {
     position: absolute;
     top: 0;
     left: 0;
-    /*top: 0;*/
-    /*height: 500px;*/
-    /*margin: auto;*/
-}
-
-.category-con .category-type {
-    width: 200px;
-    height: 36px;
-    position: absolute;
-    margin-top: -36px;
-    margin-left: 45px;
-    background: #C60A0A;
-    line-height: 36px;
-}
-
-.category-con .category-type i {
-    color: #fff;
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 14px;
-}
-
-.category-type .text {
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 8px;
-    font-weight: 700;
-    color: #fff;
 }
 
 /* 侧边栏导航 */
@@ -932,8 +904,12 @@ li.select {
     color: #000;
 }
 
-.normal-nav li:hover {
+.normal-nav li.active {
     background: #fff;
+}
+
+.normal-nav li.active a {
+    font-weight: 700;
 }
 
 .normal-nav li i {
