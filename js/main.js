@@ -108,21 +108,21 @@ $('.banner-sliderNav > li').mouseenter(function () {
     $(this).addClass('select');
 });
 
-function run () {
+function run() {
     let i = 0;
     setInterval(function () {
-        i = i%5;
+        i = i % 5;
         i++;
-        $('.banner-sliderNav > li').eq(i-1).trigger('mouseenter');
+        $('.banner-sliderNav > li').eq(i - 1).trigger('mouseenter');
     }, 6000);
 }
 
 run();
 
 // leftSidebar
-$('.leftSidebar > a').click(function(){
+$('.leftSidebar > a').click(function () {
     $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top - 60
+        scrollTop: $($(this).attr('href')).offset().top - 60
     }, 500);
     return false;
 });

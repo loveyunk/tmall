@@ -606,7 +606,9 @@ input::-webkit-input-placeholder {
 
 /********** Content Style **********/
 .content {
-    width: calc(100% - 35px);
+    width: auto;
+    padding-right: 35px;
+    /*width: calc(100% - 35px);*/
     position: relative;
 }
 
@@ -616,10 +618,14 @@ input::-webkit-input-placeholder {
     background: #DD2727;
 }
 
+.nav .nav-wrapper {
+    width: 1230px;
+    margin: 0 auto;
+}
+
 .nav-category {
     width: 200px;
     height: 36px;
-    margin-left: 45px;
     background: #C60A0A;
     line-height: 35px;
     margin-right: 15px;
@@ -676,6 +682,7 @@ input::-webkit-input-placeholder {
 
 /********** Banner Style **********/
 .banner {
+    width: 100%;
     height: 500px;
     margin-bottom: 50px;
     position: relative;
@@ -683,7 +690,7 @@ input::-webkit-input-placeholder {
     left: 0;
 }
 
-.banner img {
+.banner .banner-images > img {
     width: 100%;
     height: 500px;
     position: absolute;
@@ -693,7 +700,6 @@ input::-webkit-input-placeholder {
 
 .banner-sliderNav {
     position: absolute;
-    width: 195px;
     left: calc(50% - 100px);
     bottom: 20px;
 }
@@ -866,11 +872,19 @@ li.select {
 }
 
 /********** category-con Style **********/
+.category-wrapper {
+    position: relative;
+    width: 1230px;
+    margin: 0 auto;
+}
+
 .category-con {
-    height: 500px;
     position: absolute;
     top: 0;
-
+    left: 0;
+    /*top: 0;*/
+    /*height: 500px;*/
+    /*margin: auto;*/
 }
 
 .category-con .category-type {
@@ -900,7 +914,6 @@ li.select {
 
 /* 侧边栏导航 */
 .normal-nav {
-    margin-left: 45px;
     background-color: rgba(238, 238, 238, .95);
     width: 200px;
     height: 500px;
@@ -914,6 +927,10 @@ li.select {
     line-height: 31.2px;
     font-size: 14px;
     color: #000;
+}
+
+.normal-nav li:hover {
+    background: #fff;
 }
 
 .normal-nav li i {
@@ -995,7 +1012,7 @@ li.select {
     height: 500px;
     position: absolute;
     top: 0;
-    left: 245px;
+    left: 200px;
 }
 
 .pannel-con {
@@ -1676,14 +1693,18 @@ li.select {
 .wonderful-content-item {
     float: left;
     width: 235px;
-    margin-right: 12px;
+    margin-right: 11px;
     margin-bottom: 7px;
     border: 1px solid transparent;
     background: #fff;
 }
 
+.wonderful-content-line {
+    overflow: hidden;
+}
+
 .wonderful-content-line .wonderful-content-item:last-child {
-    margin-right: -5px;
+    margin-right: -8px;
 }
 
 .wonderful-content-item:hover {
